@@ -23,23 +23,9 @@ export class MainPageComponent {
     poder: 12322
   }
 
-  // agregar() {
-  //   if (this.nuevo.nombre.trim().length === 0) {
-  //     return;
-  //   }
+  agregarNuevoPersonaje(arg: Personaje){
+    // console.log(arg);
+    this.personajes.push(arg);
+  }
 
-  //   this.personajes.push(this.nuevo);
-  //   // console.log(this.nuevo);
-  //   this.clear();
-  //   // event.preventDefault();
-  // }
-
-  // clear(): void {
-  //   // this.nuevo.nombre = ''
-  //   // this.nuevo.poder = 0
-  //   this.nuevo = {
-  //     nombre: '',
-  //     poder: 0
-  //   }
-  // }
 }
