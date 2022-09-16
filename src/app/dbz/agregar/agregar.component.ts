@@ -9,7 +9,6 @@ import { DbzService } from '../services/dbz.service';
 })
 export class AgregarComponent {
   @Input() nuevo!: Personaje;
-  // @Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter();
 
   constructor(private dbzSvc: DbzService){}
 
@@ -18,7 +17,6 @@ export class AgregarComponent {
       return;
     }
     this.dbzSvc.agregarPersonajes(this.nuevo)
-    // this.onNuevoPersonaje.emit(this.nuevo);
     this.clear();
   }
 

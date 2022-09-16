@@ -2,15 +2,12 @@
     <hr />
 
     <form (ngSubmit)="agregar()">
-      <!-- [value]="nuevo.nombre"
-      (input)="cambiarNombre($event)" -->
       <input
         type="text"
         placeholder="Nombre"
         name="nombre"
         [(ngModel)]="nuevo.nombre"
       />
-      <!-- [value]="nuevo.poder" -->
       <input
         type="number"
         placeholder="Poder"
